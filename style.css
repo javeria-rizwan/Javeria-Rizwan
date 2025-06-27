@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter var', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #900000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 50%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #550000;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h1 span {
+    color: #900000;
+}
+
+.role {
+    color: #900000;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #900000;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #900000;
+    border: 1px solid #900000;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    animation: moveOnStop 3s infinite alternate ease-in-out;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #900000;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Circle Decorations */
+.circle-decor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.circle-decor.red {
+    background-color: #e0a2a2;
+    top: -20px;
+    right: -30px;
+}
+
+.circle-decor.gray {
+    background-color: #d3d3d3;
+    bottom: -30px;
+    left: -40px;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #ffffff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-section h2 span {
+    color: #900000;
+}
+
+/* Animations */
+@keyframes moveOnStop {
+    from { transform: translateY(10px); }
+    to { transform: translateY(-10px); }
+}
